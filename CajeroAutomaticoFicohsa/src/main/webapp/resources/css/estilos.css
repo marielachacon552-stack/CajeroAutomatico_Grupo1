@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(135deg, #003366 0%, #0055A4 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.atm-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 320px;
+}
+
+/* ESTA ES LA CLAVE PARA QUE EL LOGO SE VEA BIEN */
+.logo-ficohsa {
+    width: 100% !important;
+    max-width: 150px !important; /* Fuerza el logo a un tamaño pequeño */
+    height: auto !important;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group {
+    margin: 20px 0;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Evita que el padding rompa el tamaño */
+}
+
+.btn-ingresar {
+    width: 100%;
+    padding: 12px;
+    background: #ff7900; /* Naranja Ficohsa */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn-ingresar:hover {
+    background: #e66c00;
+}

@@ -1,13 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="en"
-      xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:f="jakarta.faces.core"
+<html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html"
-      xmlns:p="primefaces">
-<f:view>
-    <h:head></h:head>
-    <h:body>
+      xmlns:p="http://primefaces.org/ui">
 
-    </h:body>
-</f:view>
+<h:head>
+    <title>ATM Ficohsa</title>
+    <h:outputStylesheet name="css/estilos.css" />
+</h:head>
+
+<h:body>
+    <div class="atm-container">
+        <h:form id="loginForm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Ficohsa_logo.png"
+                 alt="Logo Ficohsa"
+                 class="logo-ficohsa" />
+
+            <div class="input-group">
+                <label>Número de Cuenta:</label>
+                <h:inputText value="#{loginBean.cuenta}" required="true" />
+            </div>
+
+            <div class="input-group">
+                <label>PIN (4 dígitos):</label>
+                <h:inputSecret value="#{loginBean.pin}" maxlength="4" required="true" />
+            </div>
+
+            <h:commandButton value="INGRESAR" action="#{loginBean.login}" styleClass="btn-ingresar" />
+        </h:form>
+    </div>
+</h:body>
 </html>

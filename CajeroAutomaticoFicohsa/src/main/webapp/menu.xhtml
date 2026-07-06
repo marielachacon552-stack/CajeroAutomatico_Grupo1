@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+  <title>Menú Ficohsa</title>
+  <h:outputStylesheet name="css/estilos.css" />
+</h:head>
+<h:body>
+  <div class="atm-container">
+    <h2>Bienvenido, Cliente</h2>
+    <p>¿Qué operación desea realizar?</p>
+
+    <h:form>
+      <h:commandButton value="Consultar Saldo" action="saldo?faces-redirect=true" styleClass="btn-ingresar" />
+      <h:commandButton value="Realizar Depósito" action="deposito?faces-redirect=true" styleClass="btn-ingresar" />
+      <h:commandButton value="Realizar Retiro" action="retiro?faces-redirect=true" styleClass="btn-ingresar" />
+      <h:commandButton value="Salir" action="index?faces-redirect=true" styleClass="btn-ingresar" />
+    </h:form>
+  </div>
+</h:body>
+</html>
